@@ -1,0 +1,7 @@
+Download yolo.h5 file from this link:
+https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0/
+
+You can also use another .h5 model for the detector,
+but you need to change this line of code in the .py file:
+detector.setModelTypeAsYOLOv3()
+according to the model you choose.
