@@ -3,11 +3,16 @@
 # pip install chatterbot-corpus
 # To run the web app, on Linux
 # open the terminal in the folder of the .py file
-# then type: export FLASK_APP="Flask Chat Bot.py"
-# then: flask run
+# then type: export FLASK_APP=VocalBotFlask.py
+# then: flask run and go on localhost:5000
+# or simply run the script and go on localhost:5000
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
+from gtts import gTTS
+from pydub import AudioSegment
+from pydub.playback import play
+import os
 
 app = Flask(__name__)
 
@@ -67,4 +72,16 @@ def homepage():
 @app.route("/get")
 def get():
     userText = request.args.get('msg')
-    return str(english_bot.get_response(userText))
+    reply = english_bot.get_response(userText)
+    text = str(reply)
+    tts = gTTS(text=text, lang='en')
+    tts.save("output.mp3")
+    audio = AudioSegment.from_mp3("output.mp3")
+    play(audio)
+    file_path = 'output.mp3'
+    os.remove(file_path)
+
+# This will make possibile to run the app
+# by simply run the script
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -1,10 +1,11 @@
 # Python's version used: 3.8.2 64 bit
 # pip install flask
 # To view the created web page
-# Go on terminal in the same directory of this file and
-# If you are on Windows write: set FLASK_APP=Example.py
-# If you are on Linux write: export FLASK_APP=Example.py
-# no space between = and Example.py or it won't work
+# run the script and go to localhost:5000
+# or go on terminal in the same directory of this file and
+# If you are on Windows' terminal: set FLASK_APP="Hello World.py"
+# If you are on Windows' powershell: $env:FLASK_APP="Hello World.py"
+# If you are on Linux: export FLASK_APP="Hello World.py"
 # Then: flask run
 # Then go on the browser and type in the search bar:
 # localhost:5000
@@ -30,3 +31,8 @@ def homepage():
 @app.route("/contacts")
 def contacts():
     return "Contact us!"
+
+# This will make possibile to run the app 
+# by simply run the script
+if __name__ == '__main__':
+    app.run(debug=True)
