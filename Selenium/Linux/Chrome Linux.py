@@ -12,7 +12,6 @@ except:
     pass
 finally:
     cwd = os.getcwd()
-    print(cwd)
     # Executed as a simple script, the driver should be in `PATH`
     driver = webdriver.Chrome(executable_path= cwd + "/chromedriver")
 
