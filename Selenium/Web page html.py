@@ -1,5 +1,9 @@
 # Python's version used: 3.8.2 64 bit
 # pip install selenium
+# If you are on Linux
+# go in the folder of the geckodriver and type:
+# sudo chmod 777 geckodriver
+
 from selenium import webdriver
 from pprint import pprint
 import os
@@ -13,8 +17,9 @@ finally:
     cwd = os.getcwd()
     try:
         # Executed as a simple script, the driver should be in `PATH`
-        driver = webdriver.Firefox(executable_path=cwd + "/Windows/geckodriver.exe")
-    except: 
+        driver = webdriver.Firefox(executable_path=cwd +
+                                   "/Windows/geckodriver.exe")
+    except:
         driver = webdriver.Firefox(executable_path=cwd + "/Linux/geckodriver")
 
 # Open a web page
