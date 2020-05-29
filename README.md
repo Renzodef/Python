@@ -16,9 +16,6 @@ It contains examples of Jupyter Notebooks of some personal Python's application 
 ## Machine Learning
 It contains examples of Machine Learning Models with the Python's library Scikit-learn
 
-## Mail
-It contains examples that use the Python's standard library smtplib for sending an E-Mail.
-
 ## Object Detection
 It contains examples that use the Python's libraries Luminoth and imageAI for computer vision and object detection into images and videos.
 
@@ -31,6 +28,9 @@ It contains executable files created with the Python's library PyInstaller.
 ## Selenium
 It contains examples that use the framework Selenium for web scraping and web data's extraction.
 
+## Smtplib
+It contains examples that use the Python's standard library smtplib for sending an E-Mail.
+
 ## Speech Recognition
 It contains examples of artificial voice reproduction and speech recognition through Python's libraries and Google's APIs.
 
@@ -39,3 +39,6 @@ It contains examples of Graphical User Interfaces created with the Python's libr
 
 ## Turtle
 It contains examples of shapes, patterns and drawings made with the Python's library Turtle.
+
+## Twilio
+It contains examples that use the Twilio's APIs to send WhatsApp messages to a personal number.
