@@ -1,3 +1,6 @@
+## Beautiful Soup
+It contains examples that use the Python's library Beautiful Soup for web scraping and web data's extraction.
+
 ## Chat Bot
 It contains examples that use the Python's library ChatterBot to create a bot that replies to the the text written using a database to choose the answers.
 
