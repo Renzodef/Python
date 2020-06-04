@@ -8,9 +8,6 @@
 # that performs an automated click on a button of a web page
 # for a specified number of times chosen by the user
 
-# To run this program go with the terminal in the folder of the file and type:
-# python "Automating Cookie Clicker.py"
-
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from pprint import pprint
