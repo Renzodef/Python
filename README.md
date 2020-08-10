@@ -1,3 +1,6 @@
+## Advanced Concepts
+It contains examples that describe Python Advanced Concepts, such as Function Arguments (*args, **kwargs), Tuple Unpacking, Ternary Operator and others.
+
 ## Beautiful Soup
 It contains examples that use the Python's library Beautiful Soup for web scraping and web data's extraction.
 
@@ -27,6 +30,9 @@ It contains examples of games created with the Python's library Pygame.
 
 ## PyInstaller
 It contains executable files created with the Python's library PyInstaller.
+
+## Regular Expressions
+It contains examples of the basics of Python Regular Expressions (shortened as regex or regexp): sequences of characters that define a search pattern.
 
 ## Selenium
 It contains examples that use the framework Selenium for web scraping and web data's extraction.
