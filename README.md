@@ -8,7 +8,7 @@ It contains examples that use the Python's library Beautiful Soup for web scrapi
 It contains examples that use the Python's library ChatterBot to create a bot that replies to the the text written using a database to choose the answers.
 
 ## Data Science
-It contains examples about the basics of Data Science with Python, such as Data Manipulation, Data Analysis and Data Visualization.
+It contains examples about the foundations of Data Science with Python, such as Data Manipulation, Data Analysis and Data Visualization.
 
 ## Database 
 It contains examples of integration with Database's Tecnologies like MySQL, MongoDB and many others.
